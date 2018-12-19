@@ -8,11 +8,10 @@ echo "==="
 echo "Build complete"
 
 # copy .htaccess to dist
-cp .htaccess dist/wfp-expo
+cp .htaccess dist/demo-qr-code
 
 # deploy on reliefapps server
-rsync -ravzh dist/ manager@213.167.240.8:/var/www/html/
-# ssh manager@reliefapps -t "cd /var/www/html/wfp-expo/ ; zsh ; source ~/.zshrc ; git fetch --all && git reset --hard origin/dev; ./build.sh"
+rsync -ravzh dist/ tester@217.70.188.94:/var/www/html/
 
 echo "==="
 echo "Upload complete"

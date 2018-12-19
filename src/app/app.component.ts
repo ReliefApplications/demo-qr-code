@@ -24,7 +24,7 @@ export class AppComponent implements OnInit, AfterViewInit {
     selectedCountry: string;
     header = GlobalText.TEXTS;
     language = 'en-EN';
-    title = 'wfp-expo';
+    title = 'demo-qr-code';
     artTitle = '';
     ready = false;
     dialogOpened = false;

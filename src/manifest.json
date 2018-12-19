@@ -1,6 +1,6 @@
 {
-  "name": "wfp-expo",
-  "short_name": "wfp-expo",
+  "name": "demo-qr-code",
+  "short_name": "demo-qr-code",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
