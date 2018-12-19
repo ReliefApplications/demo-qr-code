@@ -1,0 +1,202 @@
+@import "../assets/animations.scss";
+
+.loader {
+    width:100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .placeholder {
+        width: 40vw;
+        height: 40vw;
+        border-radius: 100%;
+        background-color: whitesmoke;
+        box-shadow: 0px 0px 2px 5px whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 80px;
+            height: 110px;
+        }
+
+        animation: clign 0.6s 0s infinite alternate-reverse;
+    }
+}
+
+.cog-menu {
+	padding: 15px;
+	color:black;
+	font-size: 26px;
+	cursor: pointer;
+}
+
+.flag{
+    width:25px;
+    height:20px;
+    margin-right: 20px;
+
+}
+
+.dropdown-menu>li>a{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.dropdown-menu .glyphicon {
+	margin-right: 5px;
+}
+
+.all-container {
+    width: 100vw;
+    height: 100vh;
+    padding: 5vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.glyphicon  {
+    
+    color:khaki;
+}
+
+
+
+.modal>.carousel-caption{
+    .modal-header{
+        background-color: khaki;
+        .close{
+            color:red;
+
+        }
+        .modal-title{
+            color:red;
+        }
+        
+    }
+    .modal-body{
+        
+    }
+        
+    
+}
+
+
+
+.main-content {
+    text-align: center;
+
+    padding: 15px;
+    width: 90vw;
+    background-color: rgba(15, 15, 15, 0.965);
+    color: whitesmoke;
+    border-radius: 8px;
+
+    animation: slide-top 0.5s 0s linear;
+
+    .firstTitle {
+        margin-bottom: 5px;
+        font-family: Dream;
+    }
+    .carousel-container {
+        min-height: 40vh;
+
+        .carousel-caption {
+            margin: 0px !important;
+            padding: 5px !important;
+            border-radius: 8px;
+            background-color: rgba(15, 15, 15, 0.5);
+        
+            .captions {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: bold;
+                font-size: 0.8em;
+                padding-bottom: 8px;
+            }
+        }
+    }
+}
+
+.carousel-item {
+
+    img {
+        max-height: 60vh;
+        max-width: 90vw;
+    }
+}
+
+.description {
+    margin: 5vw;
+    padding: 10px;
+    border-radius: 8px;
+    width: 90vw;
+    background-color: rgba(15, 15, 15, 0.965);
+    color: whitesmoke;
+    text-align: justify;
+
+    animation: slide-bot 0.5s 0s linear;
+
+    .title {
+        text-align: center;
+        font-family: Dream;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+
+    margin-bottom: 60px;
+
+}
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(15, 15, 15);
+    box-shadow: 0px 0px 2px 5px rgb(15, 15, 15);;
+
+    .relief-logo {
+        height: 25px;
+        width: 50px;
+    }
+    .wfp-logo {
+        height: 25px;
+        width: 20px; //35
+    }
+    .signature img {
+        height: 25px;
+        width: 35px;
+    }
+    .contact-button button {
+        color:whitesmoke;
+        background-color: #000033;
+        border: 1px solid whitesmoke;
+        box-shadow: 1px 1px 0.5px 0.5px whitesmoke;
+        border-radius: 8px;
+    }
+
+    .navigate {
+        color: white;
+    }
+}
+
+.snackWindow {
+    position: fixed;
+    bottom: 35px;
+
+    width: 100vw;
+    height: auto;
+    z-index: 1000;
+    color: whitesmoke;
+    background-color: #000033;
+    text-align: center;
+
+    animation: pass-by 4s 0s;
+}
